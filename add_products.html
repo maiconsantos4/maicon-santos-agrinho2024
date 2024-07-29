@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Adicionar Produto</title>
-        <link rel="stylesheet" href="style.css">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Adicionar Produto</title>
+         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <header>
-            <h1> Novo Produto</h1>
+             <h1> Novo Produto</h1>
             <nav>   
-                <li><a href="index.Html">Início</a></li>
-                <li><a href="products.html">Produtos</a></li>
-                <li><a href="add_products.html">Adicionar Produtos</a></li>
-                <li><a href="carrinho.html" id="carrinho-link">
-                    <img src="negão.jpg" alt="Carrinho de Compras" id="carrinho-img">
-                    <span id="carrinho-count"></span>
+                 <li><a href="index.Html">Início</a></li>
+                 <li><a href="products.html">Produtos</a></li>
+                 <li><a href="sobre.html">Sobre</a></li>
                </a></li>
             </nav>
+
         </header>
+
         <main>
             <h2>Cadastro do produto</h2>
             <form id="product-form">
@@ -29,8 +29,9 @@
                 <label for="product-image">URL da Imagem:</label>
                 <input type="text" id="product-image" required>
                 <div id="image-preview">
-                    <img id="preview-img" src="" alt="Pré-visualização da Imagem" style="display: none;">
+                     <img id="preview-img" src="" alt="Pré-visualização da Imagem" style="display: none;">
                 </div>
+
                 <label for="product-description">Descrição:</label>
                 <textarea id="product-description" required></textarea>
                 <label for="product-brand">Marca:</label>
@@ -40,11 +41,13 @@
                      <option value="Nacional">Nacional</option>
                      <option value="Internacional">Internacional</option>
                 </select>
+
                 <label for="product-condition">Condição:</label>
                 <select id="product-condition" required>
                      <option value="Novo">Novo</option>
                      <option value="Usado">Usado</option>
-                </select>       
+                </select> 
+
                 <label for="product-rating">Avaliação:</label>
                 <input type="number" id="product-rating" min="1" max="5" required>
                 <label for="product-category">Categoria:</label>
@@ -54,10 +57,17 @@
                      <option value="Roupas">Roupas</option>
                      <option value="Sapatos">Sapatos</option>
                 </select>
+
                 <button type="submit">Adicionar Produto</button>
+
             </form>
+
             <div id="feedback" class="feedbck"></div>
+
         </main>
-        <script src="script.js"></script>    
+
+        <script src="script.js"></script>   
+
     </body>
+    
 </html>
