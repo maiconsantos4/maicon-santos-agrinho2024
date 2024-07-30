@@ -2,7 +2,7 @@
 
 :root {
   --white: #fff;
-  --red: #aa0505;
+  --red: #130d0d;
   --gray: #959595;
   --blue: #56c5db;
 }
@@ -130,7 +130,7 @@ hr {
 
 .movie-title {
   font-family: "Rock Salt", cursive;
-  color: var(--white);
+  color: var(--black);
 }
 
 .list-container {
