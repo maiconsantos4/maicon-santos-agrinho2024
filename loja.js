@@ -119,4 +119,3 @@ if (document.readyState == 'loading') {
     document.querySelector(".cart-total-container span").innerText = "R$" + totalAmount
   }
   
-  
