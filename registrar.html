@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #000000;
     overflow: hidden;
 }
 
@@ -96,7 +96,7 @@ h2 {
 
 .input-box input {
     width: 100%;
-    height: 20px;
+    height: 16px;
     background: transparent;
     border: none;
     outline: none;
@@ -163,7 +163,7 @@ h2 {
     color: #00f7ff;
 }
 
-.btn-cadastrar { 
+button {
     width: 100%;
     height: 40px;
     background: #fff;
@@ -175,20 +175,8 @@ h2 {
     color: #191919;
     font-weight: 500;
     transition: .5s ease;
-    align-items: center;                               
-    background-color: #b1b1b1;
-    color: rgb(0, 0, 0);
-    padding: 10px ;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
 }
- 
-.btn-cadastrar:hover {
-    align-items: center;
-    background: #00f7ff;
-    box-shadow: 0 0 15px #00f7ff, 0 0 15px #00f7ff;
-}
+
 .input-check:checked~button {
     background: #00f7ff;
     box-shadow: 0 0 15px #00f7ff, 0 0 15px #00f7ff;
@@ -333,7 +321,22 @@ h2 {
         0 0 45px #00f7ff,
         0 0 60px #00f7ff;
 }
-    </style>
+
+.btn-cadastrar {
+    align-items: center;
+    background-color: #b1b1b1;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+ 
+.btn-cadastrar:hover {
+    background-color: #f1f1f1;
+    align-items: center;
+}
+</style>
 </head>
 
 <body>
@@ -348,7 +351,15 @@ h2 {
             </label>
             <div class="light"></div>
 
-            <h2>Login</h2>
+            <h2>Register</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="name"></ion-icon>
+                </span>
+                <input type="name" required>
+                <label>Name</label>
+                <div class="input-line"></div>
+            </div>
             <div class="input-box">
                 <span class="icon">
                     <ion-icon name="mail"></ion-icon>
@@ -365,14 +376,23 @@ h2 {
                 <label>Password</label>
                 <div class="input-line"></div>
             </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="confirm password" required>
+                <label>Confirm Password</label>
+                <div class="input-line"></div>
+            </div>
             <div class="remember-forgot">
                 <label><input type="checkbox"> Remember me</label>
                 <a href="#">Forgot Password?</a>
             </div>
             <a href="index.Html" class="btn-cadastrar">Register</a>
             <div class="register-link">
-                <p>Don't have an account? <a href="registrar.html">Register</a>
-                   <!-- Botão para redirecionar para a página de avaliações -->
+                <p>I already have an account! <a href="cadastrar.html">Login</a></p>
+                     <!-- Botão para redirecionar para a página de avaliações -->
+                
             </div>
         </form>
     </div>

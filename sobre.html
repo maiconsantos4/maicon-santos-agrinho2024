@@ -5,6 +5,61 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Sobre - AgroTroca</title>
      <link rel="stylesheet" href="style.css">
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+         }
+         header {
+             background-color: #000000;
+             padding: 20px;
+             text-align: center;
+             border-bottom: 1px solid #ffffff;
+         }
+         nav ul {
+             list-style-type: none;
+             padding: 0;
+         }
+         nav ul li {
+             display: inline;
+             margin: 0 10px;
+         }
+         nav ul li a {
+             text-decoration: none;
+             color: #ffffff;
+         }
+         main {
+             padding: 20px;
+         }
+         .item-container {
+             display: flex;
+             flex-wrap: wrap;
+             gap: 20px;
+             justify-content: center;
+         }
+         .item {
+             border: 1px solid #000000;
+             border-radius: 10px;
+             padding: 10px;
+             text-align: center;
+             width: 150px;
+         }
+         .item img {
+             max-width: 100%;
+             border-radius: 10px;
+         }
+         .info {
+             display: none;
+             text-align: left;
+             margin-top: 10px;
+         }
+         footer {
+             background-color: #000000;
+             padding: 0.9px;
+             text-align: center;
+             border-top: 1px solid #ddd;
+             margin-top: 1px;
+         }
+     </style>
 </head>
 
 <body>
@@ -12,7 +67,7 @@
          <h1>AgroTroca</h1>
         <nav>
             <ul>
-                 <li><a href="index.html">Home</a></li>
+                 <li><a href="index.html">inicio</a></li>
                  <li><a href="loja.html">Loja</a></li>
                  <li><a href="add_products.html">Adicionar Produtos</a></li>
             </ul>
@@ -22,13 +77,141 @@
     <main>
          <h2>Sobre Nós</h2>
          <p>O conceito "Do campo à cidade colhendo oportunidades" no contexto do seu site, Agrotroca, destaca a conexão entre áreas rurais e urbanas através de uma plataforma de compra e venda. Agrotroca facilita a comercialização de produtos agrícolas, permitindo que produtores rurais alcancem mercados urbanos e que consumidores urbanos tenham acesso a produtos frescos e locais. Esse intercâmbio promove o desenvolvimento econômico, social e sustentável, valorizando a agricultura e oferecendo novas oportunidades de negócio tanto no campo quanto na cidade.</p>
-         <!-- Adicione mais informações sobre a empresa aqui -->
+         
+         <h3>Curiosidades</h3>
+         <div class="item-container">
+             <!-- Frutas -->
+             <div class="item">
+                 <img src="banana.jpg" alt="Banana">
+                 <p>Banana</p>
+                 <button onclick="showInfo('banana')">Saiba Mais</button>
+                 <div id="banana-info" class="info">
+                     <p><strong>Coisas boas:</strong> Bananas são ricas em potássio e ajudam na digestão.</p>
+                     <p><strong>Coisas ruins:</strong> Comer muitas bananas pode causar dores de cabeça devido ao alto teor de tiramina.</p>
+                     <p><strong>Curiosidades:</strong> Bananas são tecnicamente bagas.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="maça.jpg" alt="Maçã">
+                 <p>Maçã</p>
+                 <button onclick="showInfo('maca')">Saiba Mais</button>
+                 <div id="maca-info" class="info">
+                     <p><strong>Coisas boas:</strong> Maçãs são ricas em fibras e vitamina C.</p>
+                     <p><strong>Coisas ruins:</strong> Algumas pessoas podem ser alérgicas a maçãs.</p>
+                     <p><strong>Curiosidades:</strong> Existem mais de 7.500 variedades de maçãs cultivadas no mundo.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="laranja.jpg" alt="Laranja">
+                 <p>Laranja</p>
+                 <button onclick="showInfo('laranja')">Saiba Mais</button>
+                 <div id="laranja-info" class="info">
+                     <p><strong>Coisas boas:</strong> Laranjas são uma excelente fonte de vitamina C.</p>
+                     <p><strong>Coisas ruins:</strong> O ácido cítrico pode desgastar o esmalte dos dentes.</p>
+                     <p><strong>Curiosidades:</strong> A laranja é um híbrido entre a tangerina e o pomelo.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="morango.jpg" alt="Morango">
+                 <p>Morango</p>
+                 <button onclick="showInfo('morango')">Saiba Mais</button>
+                 <div id="morango-info" class="info">
+                     <p><strong>Coisas boas:</strong> Morangos são ricos em antioxidantes e vitamina C.</p>
+                     <p><strong>Coisas ruins:</strong> Algumas pessoas podem ser alérgicas a morangos.</p>
+                     <p><strong>Curiosidades:</strong> O morango é a única fruta com sementes na parte externa.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="abacaxi.jpg" alt="Abacaxi">
+                 <p>Abacaxi</p>
+                 <button onclick="showInfo('abacaxi')">Saiba Mais</button>
+                 <div id="abacaxi-info" class="info">
+                     <p><strong>Coisas boas:</strong> Abacaxi ajuda na digestão e é rico em vitamina C.</p>
+                     <p><strong>Coisas ruins:</strong> Pode causar sensação de queimação na boca devido à bromelina.</p>
+                     <p><strong>Curiosidades:</strong> O abacaxi é composto de muitas flores individuais cujos frutos se fundem ao redor de um núcleo central.</p>
+                 </div>
+             </div>
+             
+             <!-- Laticínios -->
+             <div class="item">
+                 <img src="queijo.jpg" alt="Queijo">
+                 <p>Queijo</p>
+                 <button onclick="showInfo('queijo')">Saiba Mais</button>
+                 <div id="queijo-info" class="info">
+                     <p><strong>Coisas boas:</strong> Queijo é uma boa fonte de cálcio e proteínas.</p>
+                     <p><strong>Coisas ruins:</strong> Pode ser rico em gordura saturada e sódio.</p>
+                     <p><strong>Curiosidades:</strong> Existem mais de 1.800 tipos de queijos no mundo.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="leite.jpg" alt="Leite">
+                 <p>Leite</p>
+                 <button onclick="showInfo('leite')">Saiba Mais</button>
+                 <div id="leite-info" class="info">
+                     <p><strong>Coisas boas:</strong> Leite é uma excelente fonte de cálcio e vitamina D.</p>
+                     <p><strong>Coisas ruins:</strong> Algumas pessoas são intolerantes à lactose.</p>
+                     <p><strong>Curiosidades:</strong> O leite de vaca é a bebida mais consumida no mundo.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="iogurte.webp" alt="Iogurte">
+                 <p>Iogurte</p>
+                 <button onclick="showInfo('iogurte')">Saiba Mais</button>
+                 <div id="iogurte-info" class="info">
+                     <p><strong>Coisas boas:</strong> Iogurte é rico em probióticos e bom para a digestão.</p>
+                     <p><strong>Coisas ruins:</strong> Algumas variedades podem ser ricas em açúcar.</p>
+                     <p><strong>Curiosidades:</strong> O iogurte tem sido consumido há mais de 4.000 anos.</p>
+                 </div>
+             </div>
+             
+             <!-- Acessórios -->
+             <div class="item">
+                 <img src="butina.jpg" alt="Sapato">
+                 <p>Sapato</p>
+                 <button onclick="showInfo('sapato')">Saiba Mais</button>
+                 <div id="sapato-info" class="info">
+                     <p><strong>Coisas boas:</strong> Sapatos protegem os pés e podem ser estilosos.</p>
+                     <p><strong>Coisas ruins:</strong> Sapatos mal ajustados podem causar problemas nos pés.</p>
+                     <p><strong>Curiosidades:</strong> O primeiro sapato conhecido é datado de cerca de 3.500 a.C.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="bolsa.jpg" alt="Bolsa">
+                 <p>Bolsa</p>
+                 <button onclick="showInfo('bolsa')">Saiba Mais</button>
+                 <div id="bolsa-info" class="info">
+                     <p><strong>Coisas boas:</strong> Bolsas são práticas para carregar itens pessoais.</p>
+                     <p><strong>Coisas ruins:</strong> Bolsas pesadas podem causar dores nos ombros.</p>
+                     <p><strong>Curiosidades:</strong> A palavra 'bolsa' vem do latim 'bursa', que significa bolsa ou saco.</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="relogio.webp" alt="Relógio">
+                 <p>Relógio</p>
+                 <button onclick="showInfo('relogio')">Saiba Mais</button>
+                 <div id="relogio-info" class="info">
+                     <p><strong>Coisas boas:</strong> Relógios ajudam a manter o controle do tempo.</p>
+                     <p><strong>Coisas ruins:</strong> Relógios de baixa qualidade podem quebrar facilmente.</p>
+                     <p><strong>Curiosidades:</strong> O primeiro relógio de pulso foi criado em 1868.</p>
+                 </div>
+             </div>
+         </div>
     </main>
 
     <footer>
-         <p>&copy;todos os direitos dos consumidores.  AgroTroca 2024</p>
+         <p>&copy; Todos os direitos dos consumidores. AgroTroca 2024</p>
     </footer>
 
+    <script>
+        function showInfo(item) {
+            const infoContainer = document.getElementById(`${item}-info`);
+            if (infoContainer.style.display === "none" || infoContainer.style.display === "") {
+                infoContainer.style.display = "block";
+            } else {
+                infoContainer.style.display = "none";
+            }
+        }
+    </script>
 </body>
-
 </html>
+
